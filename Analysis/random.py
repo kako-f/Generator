@@ -55,12 +55,14 @@ class RandomCreation(object):
         allowed_bases = []
 
         if bases is 'dna':
-            allowed_bases = ['A', 'C', 'G', 'T', 'R', 'Y', 'N', 'a', 'c', 'g', 't']
+            allowed_bases = ['A', 'C', 'G', 'T', 'U', 'R', 'Y', 'K', 'M', 'S', 'W', 'B', 'D', 'H', 'V', 'N', '-', 'a',
+                             'c', 'g', 't']
         elif bases is 'prot':
             allowed_bases = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R',
                              'S', 'T', 'U', 'V', 'W', 'Y', '*']
         elif bases is 'rna':
-            allowed_bases = ['A', 'C', 'G', 'T', 'U', 'R', 'Y', 'N', 'a', 'c', 'g', 't', 'u']
+            allowed_bases = ['A', 'C', 'G', 'T', 'U', 'R', 'Y', 'K', 'M', 'S', 'W', 'B', 'D', 'H', 'V', 'N', '-', 'a',
+                             'c', 'g', 't']
 
         for base in allowed_bases:
             content_weights[base] = sequence.count(base) / len(sequence)
