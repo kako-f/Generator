@@ -61,27 +61,3 @@ if __name__ == '__main__':
     print(system_info)
     main_module(sys.argv[1:])
 
-# print('\nInput a folder name where to save the analyzed random data.\n'
-#       ' * If the folder doesn\'nt exist it will be created.\n'
-#       ' * If there is any data created by the program in the specified folder, '
-#       'this will be overwritten.\n')
-# ran_db_folder = commonfunc.check_input()
-# ran_db = Db.Database(db_folder=ran_db_folder)
-#
-# print("\nInput the directory where the files are located.")
-# input_files = commonfunc.get_files(file_extensions=("*.fasta", "*.fna", "*.faa"))
-# print('Starting the analysis on ' + str(len(input_files)) + ' file(s).')
-# commonfunc.annotation_files(genomes_files=input_files)
-#
-# random_analysis = RanAnalysis(kmer_size=arguments.return_arguments().k,
-#                               av_cores=arguments.return_arguments().nuc,
-#                               database=ran_db,
-#                               files=input_files,
-#                               chunk_size=arguments.return_arguments().limit,
-#                               multi_fasta=arguments.return_arguments().mfasta,
-#                               type_of_seq=type_of_seq,
-#                               masked=arguments.return_arguments().maskedregions,
-#                               type_of_an=type_of_an)
-# random_analysis.initialize_rsc()
-# random_analysis.start_random_creation()
-# random_analysis.start_analysis()

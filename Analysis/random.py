@@ -127,7 +127,7 @@ class RandomCreation(object):
         elif self.type_of_seq == 'prot':
             keys, weights = self.count_bases(sequence=sequence, bases='prot')
 
-        print(keys,weights)
+        print(keys, weights, sum(weights))
 
         if sum(self.content_weights.values()) == 0.0:
             if self.change_length:
